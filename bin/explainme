@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+#Este es mi primer script documentado con Git
+#Este es un simple script de arranque de mi apliación ExplaiMe
+#Autor: Francisco Javier José Angeles  bocho_zic@hotmail.com
+#Fecha de creación: jue 11 dic 2025 23:48:27 CST
+
+require_relative "../lib/explainme.rb"
+
+Explainme.run

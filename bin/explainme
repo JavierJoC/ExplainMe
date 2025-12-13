@@ -4,7 +4,7 @@
 #Autor: Francisco Javier José Angeles  bocho_zic@hotmail.com
 #Fecha de creación: jue 11 dic 2025 23:48:27 CST
 
-#--------Mensaje creado desde el futuro en el pasado-----
+#--------Mensaje creado desde el futuro en el pasado----- >>Segundo mensaje en la nueva rama <<
 ###########   INICIO DE LA APLICACIÓN  ######################
 
 require_relative "../lib/explainme.rb"

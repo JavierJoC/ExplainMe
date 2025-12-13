@@ -5,8 +5,11 @@
 #Fecha de creación: jue 11 dic 2025 23:48:27 CST
 
 #--------Mensaje creado desde el futuro en el pasado-----
+
+# Estoy de nuevo en la primera rama pero aún no entiendo que esta pasando
 ###########   INICIO DE LA APLICACIÓN  ######################
 
+#
 require_relative "../lib/explainme.rb"
 
 Explainme.run

@@ -2,10 +2,13 @@
 #Este es mi primer script documentado con Git
 #Este es un simple script de arranque de mi apliación ExplaiMe
 #>>>Este es un cambio realizado para poner a prueba el comando Git show<<<
+#mié 31 dic 2025 10:27:49 CST Estamos retomando el proyecto y entro solo para inspeccionar el flujo de trabajo 
+
+
 
 #Autor: Francisco Javier José Angeles  bocho_zic@hotmail.com
 #Fecha de creación: jue 11 dic 2025 23:48:27 CST
 
-require_relative "../lib/explainme.rb"
+require_relative "../lib/explainme.rb" # declaración del requerimiento del recurso explainme.rb
 
-Explainme.run
+Explainme.run #Se lanza la ejecución de Objeto principal

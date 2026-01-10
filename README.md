@@ -1,4 +1,67 @@
-# Project Name
+# ExplainMe
+
+~_To get a new aquisition Lenguage_~
+
+*Texto*
+**Texto**
+***Texto***
+~*texto*~
+_texto_
+_*texto*_
+_**texto**_
+_***texto***_
+__texto__
+>Esto es una anotación
+==text==
+
+<u>text</u>
+> [!NOTE]
+> This is important.
+
+
+[!TIP]
+
+[!WARNING]
+
+[!IMPORTANT]
+
+[!CAUTION]
+
+
+!!! warning
+    This is a warning.
+
+
+<span style="color:red">Critical</span>
+
+
+
+This is a <sub>subscript</sub> text
+This is a <sup>superscript</sup> text
+This is an <ins>underlined</ins> text
+
+Use `git status` to list all new or modified files that haven't yet been committed.
+
+
+```
+git status
+git add
+git commit
+```
+
+![imagen de muestra](https://image.pngaaa.com/413/3223413-middle.png)
+
+
+------
+->Esto es una flecha
+
+
+========================
+VERSION 3.2.0
+========================
+- Added encryption support
+- Deprecated legacy API
+
 
 
 
@@ -174,6 +237,12 @@ Explain where configuration lives.
 ## Options
 | Option | Description | Default |
 |------|------------|--------|
+| timeout | Request timeout (ms) | 3000 |
+| log_level | Logging verbosity | INFO |
+
+## Options
+| Option | Description | Default |
+|:------  |:------------:|--------:|
 | timeout | Request timeout (ms) | 3000 |
 | log_level | Logging verbosity | INFO |
 

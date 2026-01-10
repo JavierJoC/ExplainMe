@@ -1,5 +1,31 @@
 # Project Name
 
+
+
+
+
+
+
+flowchart LR
+    User[User]
+    
+    Clipboard[Clipboard Adapter]
+    AI[AI Adapter]
+    TTS[TTS Adapter]
+    
+    App[Application Service]
+    Domain[Domain Model]
+    
+    User --> Clipboard
+    Clipboard --> App
+    AI --> App
+    TTS --> App
+    App --> Domain
+
+
+
+
+
 ## Overview
 Short, high-level description of the problem this project solves
 and its intended audience.

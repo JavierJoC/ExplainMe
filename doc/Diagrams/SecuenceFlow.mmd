@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant User
+    participant ClipboardAdapter
+    participant ApplicationService
+    participant AIAdapter
+    participant TTSAdapter
+    participant Domain
+
+    User->>ClipboardAdapter: copies text
+    ClipboardAdapter->>ApplicationService: TextEvent
+    ApplicationService->>AIAdapter: explain(text)
+    AIAdapter-->>ApplicationService: Explanation
+    ApplicationService->>TTSAdapter: speak(text)
+    ApplicationService->>TTSAdapter: speak(explanation)
+    ApplicationService->>Domain: persist / reason
+

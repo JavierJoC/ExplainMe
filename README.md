@@ -3,19 +3,32 @@
 ~_To get a new aquisition Lenguage_~
 
 *Texto*
+
 **Texto**
+
 ***Texto***
+
 ~*texto*~
+
 _texto_
+
 _*texto*_
+
 _**texto**_
+
 _***texto***_
+
 __texto__
+
 >Esto es una anotación
+>
 ==text==
 
+
 <u>text</u>
+
 > [!NOTE]
+> 
 > This is important.
 
 

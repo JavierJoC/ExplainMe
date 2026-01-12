@@ -5,34 +5,37 @@
 >
 >
 
-## BACKGROUD OF TEHORY AND TECNIC
-
-### Fundameltal of second lenguage acquisition 
-    _by Stephen Krasen and Jeff McQuillan_
-
-I share the videos about the theory
-> https://www.youtube.com/watch?v=d4RI0GWnWEs
-
-> https://www.youtube.com/watch?v=p7WUxvpPIKQ
-
-Think about the teory and practice  are separete things is a mistake
-
-The authors of the theory supose that exist five principles that actually are:
-
-- ACQUISITION
-- NATURAL ORDER
-- MONITOR
-- INPUT
-- AFECTIVE FILTER
-
-For the moment only say that those principles I can reasume in a maxim
-
-"Learning a new language requires immersing yourself in it. You need to actively use the words you're learning to grasp new concepts—it must be heard, not just read."
+## BACKGROUD OF THEORY AND TECNIC
 
 
-So, this was the GIDE LINE to use in this project, try to be more easy to the user interact whit the app.
+### Fundamentals of Second Language Acquisition<br>&emsp;&emsp;&emsp;&emsp;<sup>*by Stephen Krashen and Jeff McQuillan*</sup>
 
-my personal experiens is that the mos common user relate whit the computer was the mouse ans the text selection. so i propose to implement that Evet that all operative sistem use, the text selection, but need to be carefuly because that practice maybe open insecurities, actually are a monioring of user imputs. 
+
+
+I share the videos to know about the theory:
+> Fundamentals of Second Language Acquisition: A Crash Course  
+> &emsp;https://www.youtube.com/watch?v=d4RI0GWnWEs 
+>
+> Conversation About Language Acquisition  
+> &emsp;https://www.youtube.com/watch?v=p7WUxvpPIKQ
+
+
+To think about the theory and practice as separate things is a mistake. The authors of that theory suppose that there exist five principles, which are:
+
+- **ACQUISITION**
+- **NATURAL ORDER**
+- **MONITOR**
+- **INPUT**
+- **AFECTIVE FILTER**
+
+For the moment only say that those principles I can reasume in a Maxim:
+
+>"Learning a new language requires immersing yourself in it. You need to actively use the words you're learning to grasp new concepts—it must be heard, not just read."
+
+
+So, this was the GIDE LINE to use in this project, try to be more easy to the user interact whit the PC interface whe explore Enghlis text contain.
+
+my personal experiences is that the most common user relate with the computer was the mouse ans the text selection. so i propose to implement that Evet that all operative sistem use, the text selection, but need to be carefuly because that practice maybe open insecurities, actually are a monioring of user inputs. 
 
 
 

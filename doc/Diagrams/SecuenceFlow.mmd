@@ -1,16 +1,18 @@
 sequenceDiagram
     participant User
-    participant ClipboardAdapter
+    participant ClipboardModule
     participant ApplicationService
-    participant AIAdapter
-    participant TTSAdapter
+    participant AIModule
+    participant TTSModule
     participant Domain
 
-    User->>ClipboardAdapter: copies text
-    ClipboardAdapter->>ApplicationService: TextEvent
-    ApplicationService->>AIAdapter: explain(text)
-    AIAdapter-->>ApplicationService: Explanation
-    ApplicationService->>TTSAdapter: speak(text)
-    ApplicationService->>TTSAdapter: speak(explanation)
-    ApplicationService->>Domain: persist / reason
+    User->>ClipboardModule: copies text
+    ClipboardModule->>ApplicationService: TextEvent
+    ApplicationService->>AIModule: text to explain (text)
+    AIModule-->>ApplicationService: Explanation
+    ApplicationService->>TTSModule: speak (text)
+    ApplicationService->>TTSModule: speak (explanation)
+    TTSModule-->>ApplicationService: Show & Spoken the text 
+    ApplicationService->>Domain: Get real Acquisition of lenguage
+
 

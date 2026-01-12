@@ -18,11 +18,12 @@ I share the videos about the theory
 Think about the teory and practice  are separete things is a mistake
 
 The authors of the theory supose that exist five principles that actually are:
--ACQUISITION
--NATURAL ORDER
--MONITOR
--INPUT
--AFECTIVE FILTER
+
+- ACQUISITION
+- NATURAL ORDER
+- MONITOR
+- INPUT
+- AFECTIVE FILTER
 
 For the moment only say that those principles I can reasume in a maxim
 

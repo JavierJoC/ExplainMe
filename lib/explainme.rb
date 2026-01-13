@@ -1,9 +1,9 @@
 require_relative "use_case"
-
+require_relative "clipboard_x11"
 
 module Explainme
   def self.run
-    clipboard   = "straigfordward"
+    clipboard   = ClipboardX11.new
     explainer   = "The meaning of "
 
     ruta_padre = File.join(__dir__, "..", "input_prompt.wav")

@@ -6,9 +6,14 @@ class UseCase
   end
 
   def run
-    text="#{@explainer}#{@clipboard}" #{clipboard}
+
+    loop do
+      text="#{@explainer}#{@clipboard.read}" #{clipboard}
       puts text
       system("paplay", @tts)
+
+      sleep 3
+    end
 
   end
 end

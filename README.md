@@ -90,4 +90,13 @@ sequenceDiagram
 
 
 
+## DEPENDENCIAS
+aplay, paply y xclip
+
+Instalación de xclip
+`sudo apt install xclip`
+
+## REQUISITOS DEL SISTEMA
+Todas las pruebas se han realizado en Debian 12, con entornos de escritorio XFCE y GNOME ambos con el gestor grafico X11
+
 

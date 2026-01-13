@@ -12,9 +12,12 @@ class UseCase
       text=@clipboard.read
       next if text.nil? || text == last
       last = text
-
+      
 
       puts text
+      explainer = @explainer.explain(text)
+      puts explainer
+
       system("paplay", @tts)
 
       sleep 3

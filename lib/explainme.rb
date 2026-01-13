@@ -1,10 +1,11 @@
 require_relative "use_case"
 require_relative "clipboard_x11"
+require_relative "explainer_openai"
 
 module Explainme
   def self.run
     clipboard   = ClipboardX11.new
-    explainer   = "The meaning of "
+    explainer   = ExplainerOpenAI.new
 
     ruta_padre = File.join(__dir__, "..", "input_prompt.wav")
     ruta_completa = File.expand_path(ruta_padre)

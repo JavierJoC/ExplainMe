@@ -1,4 +1,7 @@
 
+require 'audite'
+
+
 module Explainme
   def self.run
     clipboard="straigfordward"
@@ -13,7 +16,12 @@ module Explainme
 
 
     puts explainer
-    system("aplay", tts)
+
+    player = Audite.new
+    player.load(tts)
+    player.start
+    player.thread.join
+    #system("aplay", tts)
 
   end
 end

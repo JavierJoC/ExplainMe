@@ -1,3 +1,14 @@
+require 'colorize'
+#This is the code for puts text in the terminal
+def wrap_text(text, width = 70)
+  text.scan(/\S.{0,#{width-2}}\S(?=\s|$)|\S+/).join("\n")
+end
+def wrap_text_indent(text, width = 70, indent = 4)
+  prefix = ' ' * indent
+  wrap_text(text, width).lines.map { |line| prefix + line }.join
+end
+
+
 class UseCase
   def initialize(clipboard:, explainer:, tts:)
     @clipboard = clipboard
@@ -14,13 +25,21 @@ class UseCase
       last = text
       
 
-      puts text
+      puts "\n\n"
+      puts wrap_text_indent(text,80,4).center(80).yellow.bold
+      puts "\n\n"
       explainer = @explainer.explain(text)
-      puts explainer
+      puts wrap_text_indent(explainer,80,4).cyan
 
       system("paplay", @tts)
 
       sleep 3
+
+
+      puts "\n\n"
+      puts wrap_text_indent(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::", 80,4).center(80).gray
+      puts "\n\n\n"
+
     end
 
   end

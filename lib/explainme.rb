@@ -1,6 +1,4 @@
 
-require 'audite'
-
 
 module Explainme
   def self.run
@@ -17,11 +15,7 @@ module Explainme
 
     puts explainer
 
-    player = Audite.new
-    player.load(tts)
-    player.start
-    player.thread.join
-    #system("aplay", tts)
+    system("paplay", tts)
 
   end
 end

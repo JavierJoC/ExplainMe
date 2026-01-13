@@ -6,9 +6,14 @@ class UseCase
   end
 
   def run
+  last = nil
 
     loop do
-      text="#{@explainer}#{@clipboard.read}" #{clipboard}
+      text=@clipboard.read
+      next if text.nil? || text == last
+      last = text
+
+
       puts text
       system("paplay", @tts)
 

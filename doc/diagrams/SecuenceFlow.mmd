@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant User
+    participant ClipboardModule
+    participant ApplicationService
+    participant AIModule
+    participant TTSModule
+    participant Domain
+
+    User->>ClipboardModule: copies text
+    ClipboardModule->>ApplicationService: TextEvent
+    ApplicationService->>AIModule: text to explain (text)
+    AIModule-->>ApplicationService: Explanation
+    ApplicationService->>TTSModule: speak (text)
+    ApplicationService->>TTSModule: speak (explanation)
+    TTSModule-->>ApplicationService: Show & Spoken the text 
+    ApplicationService->>Domain: Get real Acquisition of lenguage
+
+

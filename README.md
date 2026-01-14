@@ -96,7 +96,36 @@ aplay, paply y xclip
 Instalación de xclip
 `sudo apt install xclip`
 
+## GEMAS
+require 'colorize'
+
 ## REQUISITOS DEL SISTEMA
 Todas las pruebas se han realizado en Debian 12, con entornos de escritorio XFCE y GNOME ambos con el gestor grafico X11
 
 
+## INSTALLL
+
+sudo apt install -y  python3  python3-full  python3-pip  pipx  wget  ca-certificates  ffmpeg
+
+### Install model voices
+
+sudo mkdir -p /opt/piper/models
+sudo chmod -R 755 /opt/piper
+
+> Para descargar más modelos, verifica que tengan una versión marcada como `hig` quality
+> &empsp;https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US
+
+sudo wget -O /opt/piper/models/en_US-ryan-high.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/ryan/high/en_US-ryan-high.onnx?download=true"
+
+sudo wget -O /opt/piper/models/en_US-ryan-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/ryan/high/en_US-ryan-high.onnx.json?download=true"
+
+
+
+sudo wget -O /opt/piper/models/en_US-lessac-high.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx?download=true"
+
+sudo wget -O /opt/piper/modelsen_US-lessac-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json?download=true"
+
+
+
+### Test of the installtion is done.
+echo "This is my first trasformation of text to speach"| piper --model /opt/piper/models/en_US-ryan-high.onnx --output-raw  2>/dev/null | tee >(aplay -r 22050 -f S16_LE -t raw  >/dev/null 2>&1) | sox -r 22050 -e signed -b 16 -c 1 -t raw - speach2.wav >/dev/null 2>&1

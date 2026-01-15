@@ -125,6 +125,13 @@ Todas las pruebas se han realizado en Debian 12, con entornos de escritorio XFCE
 
 
 ## INSTALLL
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+`sudo apt install -y  python3  python3-full  python3-pip  pipx  wget  ca-certificates  ffmpeg`
+=======
+>>>>>>> usinng_paplay
 ```bash
 sudo apt install -y  python3  python3-full  python3-pip  pipx  wget  ca-certificates  ffmpeg  sox
 ```
@@ -135,6 +142,10 @@ pipx ensurepath
 ```bash
 pipx install piper-tts
 ```
+<<<<<<< HEAD
+=======
+>>>>>>> 2a559134bf9c7e80768478930f46f229c35d7df3
+>>>>>>> usinng_paplay
 
 ### Install model voices
 ```bash

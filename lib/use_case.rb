@@ -27,11 +27,15 @@ class UseCase
 
       puts "\n\n"
       puts wrap_text_indent(text,80,4).center(80).yellow.bold
+      @tts.speak(text)
       puts "\n\n"
-      explainer = @explainer.explain(text)
-      puts wrap_text_indent(explainer,80,4).cyan
+      explanation = @explainer.explain(text)
+      
+      puts wrap_text_indent(explanation,80,4).cyan
+      @tts.speak(explanation)
 
-      system("paplay", @tts)
+
+     # system("paplay", @tts)
 
       sleep 3
 

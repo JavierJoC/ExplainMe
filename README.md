@@ -111,8 +111,13 @@ sudo apt install xclip`
 ```
 
 ## GEMAS
+>require 'colorize'
+
+En modo usuario estándar (no super usuario) vas a ejecutar
+
 ```ruby
-require 'colorize'
+gem install --user-install colorize
+sudo gem install ruby-openai
 ```
 
 ## REQUISITOS DEL SISTEMA
@@ -120,10 +125,6 @@ Todas las pruebas se han realizado en Debian 12, con entornos de escritorio XFCE
 
 
 ## INSTALLL
-<<<<<<< HEAD
-
-`sudo apt install -y  python3  python3-full  python3-pip  pipx  wget  ca-certificates  ffmpeg`
-=======
 ```bash
 sudo apt install -y  python3  python3-full  python3-pip  pipx  wget  ca-certificates  ffmpeg  sox
 ```
@@ -134,7 +135,6 @@ pipx ensurepath
 ```bash
 pipx install piper-tts
 ```
->>>>>>> 2a559134bf9c7e80768478930f46f229c35d7df3
 
 ### Install model voices
 ```bash
@@ -156,8 +156,8 @@ sudo wget -O /opt/piper/models/en_US-ryan-high.onnx.json "https://huggingface.co
 
 sudo wget -O /opt/piper/models/en_US-lessac-high.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx?download=true"
 
-sudo wget -O /opt/piper/modelsen_US-lessac-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json?download=true"
-```
+sudo wget -O /opt/piper/models/en_US-lessac-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json?download=true"
+
 
 
 ### Test of the installtion is done.

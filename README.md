@@ -111,8 +111,13 @@ sudo apt install xclip`
 ```
 
 ## GEMAS
+>require 'colorize'
+
+En modo usuario estándar (no super usuario) vas a ejecutar
+
 ```ruby
-require 'colorize'
+gem install --user-install colorize
+sudo gem install ruby-openai
 ```
 
 ## REQUISITOS DEL SISTEMA
@@ -148,8 +153,8 @@ sudo wget -O /opt/piper/models/en_US-ryan-high.onnx.json "https://huggingface.co
 
 sudo wget -O /opt/piper/models/en_US-lessac-high.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx?download=true"
 
-sudo wget -O /opt/piper/modelsen_US-lessac-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json?download=true"
-```
+sudo wget -O /opt/piper/models/en_US-lessac-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json?download=true"
+
 
 
 ### Test of the installtion is done.

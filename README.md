@@ -117,7 +117,7 @@ Todas las pruebas se han realizado en Debian 12, con entornos de escritorio XFCE
 
 ## INSTALLL
 
-sudo apt install -y  python3  python3-full  python3-pip  pipx  wget  ca-certificates  ffmpeg
+`sudo apt install -y  python3  python3-full  python3-pip  pipx  wget  ca-certificates  ffmpeg`
 
 ### Install model voices
 

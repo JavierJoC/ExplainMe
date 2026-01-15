@@ -1,4 +1,16 @@
 # ExplainMe
+**ExplainMe** es una automatización sencilla para entornos Linux (sin Wayland) que te permite identificar cualquier texto que selecciones con el cursor y ejecutar un servicio basado en OpenAI para generar una explicación en inglés, usando un lenguaje coloquial y fácil de entender, sobre el significado del texto seleccionado.
+
+Una regla importante de ExplainMe es que no se permiten traducciones ni referencias en español. Aunque al principio esto puede resultar frustrante, con el tiempo cada vez más palabras y expresiones se volverán familiares de forma natural.
+
+No importa dónde se encuentre el texto: puede estar en una página web, un documento, la terminal o un chat. ExplainMe lo detectará y lo explicará.
+#  
+**ExplainMe** is a simple automation tool for Linux environments (non-Wayland) that allows you to identify any text you select with the cursor and run an OpenAI-based service to generate an explanation in English, using colloquial and easy-to-understand language, about the meaning of the selected text.
+
+One important rule of ExplainMe is that translations or references in Spanish are not allowed. Although this may feel frustrating at first, over time more words and expressions will naturally become familiar.
+
+It does not matter where the text is located—on a website, in a document, in the terminal, or in a chat. ExplainMe will detect it and explain it.
+#
 
 > [!NOTE]
 > las anotaciones se encontrarán tanto en inglés como en Español ya que actualmente me encuetro practicando mi inglés, así que según la premura de mis aportaciones las iré haciendo en inglés o en español. En cuanto a  la información consultada por DeepSeek o ChatGpt por defecto están en Inglés que intentaré referenciar.

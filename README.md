@@ -153,8 +153,11 @@ sudo mkdir -p /opt/piper/models
 sudo chmod -R 755 /opt/piper
 ```
 
-> Para descargar más modelos, verifica que tengan una versión marcada como `hig` quality
-> &empsp;https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US
+> Para descargar más modelos, verifica que tengan una versión marcada como `hig` quality  
+> &emsp;https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US  
+> Puedes revisar todo el proyecto de Piper GPL3 en:  
+> &emsp;https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/CLI.md
+
 ```bash
 sudo wget -O /opt/piper/models/en_US-ryan-high.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/ryan/high/en_US-ryan-high.onnx?download=true"
 

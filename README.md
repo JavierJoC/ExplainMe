@@ -109,7 +109,14 @@ Instalación de xclip
 `sudo apt install xclip`
 
 ## GEMAS
-require 'colorize'
+>require 'colorize'
+
+En modo usuario estándar (no super usuario) vas a ejecutar
+
+```ruby
+gem install --user-install colorize
+sudo gem install ruby-openai
+```
 
 ## REQUISITOS DEL SISTEMA
 Todas las pruebas se han realizado en Debian 12, con entornos de escritorio XFCE y GNOME ambos con el gestor grafico X11
@@ -135,7 +142,7 @@ sudo wget -O /opt/piper/models/en_US-ryan-high.onnx.json "https://huggingface.co
 
 sudo wget -O /opt/piper/models/en_US-lessac-high.onnx "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx?download=true"
 
-sudo wget -O /opt/piper/modelsen_US-lessac-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json?download=true"
+sudo wget -O /opt/piper/models/en_US-lessac-high.onnx.json "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json?download=true"
 
 
 
